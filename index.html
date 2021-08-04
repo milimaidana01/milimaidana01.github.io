@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+
+<link href="styles.css" rel="stylesheet" type="text/css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="index.js"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link
+    href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&family=Staatliches&display=swap&family=Oswald&display=swap"
+    rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;500&display=swap" rel="stylesheet">
+<html>
+<html>
+
+<head>
+</head>
+
+<body>
+    <div class="header" id="header">
+        <div class="container-a">
+            <img class="main-logo" src="https://i.ibb.co/xHxRXMr/fcf00df4-f89e-49c9-9df8-7874c24ddec9.jpg" alt="Logo" />
+            <div class="items-container">
+                <div class="items" onclick="goToHome()">Inicio</div>
+                <div class="items" onclick="goToProducts()">Productos</div>
+                <a href="#section-a" class="items">¿Cómo comprar?</a>
+                <a href="#section-b" class="items">Mayoristas</a>
+                <a href="#section-c" class="items">Contacto</a>
+                <input type="button" class="items-a" value="" onclick="goToCart()" />
+            </div>
+        </div>
+    </div>
+    <div class="container-b">
+        <div class="info">Envíos a todo el país</div>
+        <div class="info">Todos los medios de pago</div>
+        <div class="info">Comprá con seguridad</div>
+    </div>
+
+    <!-- PRODUCTOS -->
+    <div class="container-c">PRODUCTOS DESTACADOS</div>
+    <div class="products-container">
+        <div class="products">
+            <div class="container-d">
+                <img class="product-img" src="https://i.ibb.co/n3DZHpx/Whats-App-Image-2021-08-02-at-20-02-43.jpg" />
+                <div class="container-text">
+                    <div class="text-a">AURICULAR INALÁMBRICO BLUETOOTH NG- BTWINS 11</div>
+                    <div class="text-b">$2500</div>
+                </div>
+                <div class="button-container-c">
+                    <input type="button" class="button-a" value="Agregar"
+                        onclick="addToCart('AURICULAR INALÁMBRICO BLUETOOTH NG- BTWINS 11', 2500, 'https://i.ibb.co/n3DZHpx/Whats-App-Image-2021-08-02-at-20-02-43.jpg')" />
+                </div>
+            </div>
+        </div>
+        <div class="products">
+            <div class="container-d">
+                <img class="product-img" src="https://i.ibb.co/3pTX3XN/Whats-App-Image-2021-08-02-at-20-37-27.jpg" />
+                <div class="container-text">
+                    <div class="text-a">TIRA LED 5050 RGB 5M C/FUENTE, CONTROL Y CONTROLADORA WIFI</div>
+                    <div class="text-b">$3200</div>
+                </div>
+                <div class="button-container-c">
+                    <input type="button" class="button-a" value="Agregar"
+                        onclick="addToCart('TIRA LED 5050 RGB 5M C/FUENTE, CONTROL Y CONTROLADORA WIFI', 3200, 'https://i.ibb.co/3pTX3XN/Whats-App-Image-2021-08-02-at-20-37-27.jpg')" />
+                </div>
+            </div>
+        </div>
+        <div class="products">
+            <div class="container-d">
+                <img class="product-img" src="https://i.ibb.co/bsP2zDC/Whats-App-Image-2021-08-02-at-20-28-15.jpg" />
+                <div class="container-text">
+                    <div class="text-a">JOYSTICK SONY PS4 INALÁMBRICO DUALSHOCK</div>
+                    <div class="text-b">$6000</div>
+                </div>
+                <div class="button-container-c">
+                    <input type="button" class="button-a" value="Agregar"
+                        onclick="addToCart('JOYSTICK SONY PS4 INALÁMBRICO DUALSHOCK', 6000, 'https://i.ibb.co/bsP2zDC/Whats-App-Image-2021-08-02-at-20-28-15.jpg')" />
+                </div>
+            </div>
+        </div>
+        <div class="products">
+            <div class="container-d">
+                <img class="product-img" src="https://i.ibb.co/VCBgg3C/Whats-App-Image-2021-08-02-at-20-39-55.jpg" />
+                <div class="container-text">
+                    <div class="text-a">PARLANTE HT-S08 8" PULGADAS BLUETOOTH C/LUCES LED</div>
+                    <div class="text-b">$5000</div>
+                </div>
+                <div class="button-container-c">
+                    <input type="button" class="button-a" value="Agregar"
+                        onclick="addToCart('PARLANTE HT-S08 8 PULGADAS BLUETOOTH CON LUCES LED', 5000, 'https://i.ibb.co/VCBgg3C/Whats-App-Image-2021-08-02-at-20-39-55.jpg')" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PRODUCTOS OCULTOS -->
+    <div class="products-container-hidden">
+        <div class="products">
+            <div class="container-d">
+                <img class="product-img" src="https://i.ibb.co/F3cLSzJ/Whats-App-Image-2021-08-02-at-20-06-55.jpg" />
+                <div class="container-text">
+                    <div class="text-a">AURICULARES GATITO BLUETOOTH Y LUZ LED + LECTOR TF SEISA EJ- S26</div>
+                    <div class="text-b">$3500</div>
+                </div>
+                <div class="button-container-c">
+                    <input type="button" class="button-a" value="Agregar"
+                        onclick="addToCart('AURICULARES GATITO BLUETOOTH Y LUZ LED + LECTOR TF SEISA EJ- S26', 3500, 'https://i.ibb.co/F3cLSzJ/Whats-App-Image-2021-08-02-at-20-06-55.jpg')" />
+                </div>
+            </div>
+        </div>
+        <div class="products">
+            <div class="container-d">
+                <img class="product-img" src="https://i.ibb.co/bWK7jHV/Whats-App-Image-2021-08-02-at-20-42-24.jpg" />
+                <div class="container-text">
+                    <div class="text-a">LÁMPARA LED RGB PARLANTE BLUETOOTH + CONTROL REMOTO</div>
+                    <div class="text-b">$1600</div>
+                </div>
+                <div class="button-container-c">
+                    <input type="button" class="button-a" value="Agregar"
+                        onclick="addToCart('LÁMPARA LED RGB PARLANTE BLUETOOTH + CONTROL REMOTO', 1600, 'https://i.ibb.co/bWK7jHV/Whats-App-Image-2021-08-02-at-20-42-24.jpg')" />
+                </div>
+            </div>
+        </div>
+        <div class="products">
+            <div class="container-d">
+                <img class="product-img" src="https://i.ibb.co/W3JZDD6/Whats-App-Image-2021-08-02-at-20-44-30-1.jpg" />
+                <div class="container-text">
+                    <div class="text-a">ARO DE LUZ LED 33CM C/TRIPODE DE 2,10M Y SOPORTE DE CELULAR</div>
+                    <div class="text-b">$3500</div>
+                </div>
+                <div class="button-container-c">
+                    <input type="button" class="button-a" value="Agregar"
+                        onclick="addToCart('ARO DE LUZ LED 33CM C/TRIPODE DE 2,10M Y SOPORTE DE CELULAR', 3500, 'https://i.ibb.co/W3JZDD6/Whats-App-Image-2021-08-02-at-20-44-30-1.jpg')" />
+                </div>
+            </div>
+        </div>
+        <div class="products">
+            <div class="container-d">
+                <img class="product-img" src="https://i.ibb.co/pWZnN06/Whats-App-Image-2021-08-02-at-20-05-18.jpg" />
+                <div class="container-text">
+                    <div class="text-a">KIT GAMER NOGA TECLADO + MOUSE + AURICULARES + PAD NKB-403 HYT</div>
+                    <div class="text-b">$3500</div>
+                </div>
+                <div class="button-container-c">
+                    <input type="button" class="button-a" value="Agregar"
+                        onclick="addToCart('KIT GAMER NOGA TECLADO + MOUSE + AURICULARES + PAD NKB-403 HYT', 3500, 'https://i.ibb.co/pWZnN06/Whats-App-Image-2021-08-02-at-20-05-18.jpg')" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- BOTÓN MOSTRAR MÁS -->
+    <div class="button-container hide-products-btn">
+        <button class="btn-4" id="button" onclick="showProducts()"><span>Mostrar más</span></button>
+    </div>
+
+    <div class="section-a" id="section-a">
+        <div class="title-a">¿Cómo comprar?</div>
+        <div class="text-c">Para realizar una compra, seleccioná los productos que te interesan y
+            agregálos al carrito de compra.</div>
+        <div class="text-c">Una vez seleccionados todos los productos y sus cantidades, procedé a la compra de los
+            mismos
+            ingresando tus datos personales y dirección de envío.</div>
+        <div class="text-c">Las distintas formas de pago con las que operamos se efectúan sobre sistemas seguros que
+            protegen tus datos e informacion personal.</div>
+        <div class="text-c">Una vez completados todos los pasos de compra se te redigirá a nuestro whatsapp en donde va
+            a estar
+            toda la info de tu carrito en un mensaje el cual tenés que enviarnos. Una vez recibido el mensaje
+            confirmaremos stock de los productos que elegiste y además procederemos a cobrarte según el método de pago
+            que más te
+            sirva.</div>
+        <div class="title-a">Métodos de pago</div>
+        <div class="text-c">Utilizamos como método de pago mercado pago, transferencia bancaria y todas las tarjetas de
+            crédito.</div>
+        <div class="title-a">Medios de envío</div>
+        <div class="text-c" style="padding-bottom: 50px;">Enviamos a todo el país por medio de Correo Argentino. Los
+            envíos dentro de CABA y alrededores los hacemos por medio de una motomensajería de confianza. También podés
+            elegir la opción de pasar a buscar tu pedido en nuestra sucursal en Caballito.</div>
+    </div>
+    <div class="section-b" id="section-b">
+        <div class="title-b">Mayoristas</div>
+        <div class="text-d">Tenemos una lista de precios para mayoristas, podés
+            consultarla a través de nuestro Whatsapp:</div>
+
+        <!-- BOTÓN DE WHATSAPP -->
+        <div class="button-container">
+            <button class="btn-4" id="button" onclick="goToWhatsapp()"><span>Hacé click acá</span></button>
+        </div>
+
+    </div>
+    <div class="section-c" id="section-c">
+        <div class="title-b">Contacto</div>
+        <div class="text-d">Podés encontrarnos en las siguientes redes sociales:</div>
+        <div class="button-container-b">
+            <button class="btn-4" id="button" onclick="goToInstagram()"><span>Instagram</span></button>
+        </div>
+        <div class="button-container-b">
+            <button class="btn-4" id="button" onclick="goToFacebook()"><span>Facebook</span></button>
+        </div>
+    </div>
+    <div class="container-footer">
+        <div class="footer">
+            <div class="title-footer">Navegación</div>
+            <div class="text-footer" onclick="goToHome()">Inicio</div>
+            <div class="text-footer" onclick="goToProducts()">Productos</div>
+            <div class="text-footer" onclick="goToSectionA()">¿Cómo comprar?</div>
+            <div class="text-footer" onclick="goToSectionB()">Mayoristas</div>
+            <div class="text-footer" onclick="goToSectionC()">Contacto</div>
+        </div>
+        <div class="footer">
+            <img class="main-logo" src="https://i.ibb.co/xHxRXMr/fcf00df4-f89e-49c9-9df8-7874c24ddec9.jpg" alt="Logo" />
+        </div>
+        <div class="footer">
+            <div class="title-footer">Redes sociales</div>
+            <div class="text-footer" onclick="goToInstagram()">Instagram</div>
+            <div class="text-footer" onclick="goToFacebook()">Facebook</div>
+            <div class="text-footer" onclick="goToWhatsapp()">Whatsapp</div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
+
+</html>

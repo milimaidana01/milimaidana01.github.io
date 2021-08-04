@@ -1,0 +1,171 @@
+.form-title {
+    font-family: 'Staatliches', cursive;
+    font-size: 40px;
+    margin-top: 25px;
+    margin-bottom: 14px;
+    color: #0e1228;
+  }
+  
+  .form {
+    height: 35px;
+    width: 90%;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 18px;
+  }
+  
+  .total-price {
+    font-size: 28px;
+    margin-top: 16px;
+    color: #0e1228;
+    font-family: 'Staatliches', cursive;
+    
+  }
+  
+  .cart-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .cart-btn-disabled {
+    cursor: not-allowed!important;
+    background-color: #6f6d83!important;
+    font-weight: 100!important;
+  }
+
+  .form-cart-container {
+    padding: 0 32px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 32px;
+    min-height: 568px;
+  }
+  
+  .form-container {
+    margin-top: 32px;
+    margin-left: 70px;
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+  }
+  
+  .cart-container {
+    display: inline-block;
+    margin-top: 32px;
+    background-color: #f0f0f1;
+    grid-template-columns: auto auto auto auto;
+    width: fit-content;
+    border-right: solid 8px;
+  }
+  
+  .divs-container {
+    display: inline-block;
+  }
+  
+  .product-img-cart {
+    height: 110px;
+    margin-left: 12px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-right: 30px;
+  }
+  
+  .product-name {
+    display: inline-block;
+    font-family: 'PT Sans Narrow';
+    font-size: 22px;
+    max-width: 200px;
+    padding-right: 30px;
+    position: relative;
+    width: 170px;
+  }
+  
+  .product-price {
+    display: inline-block;
+    font-family: 'PT Sans Narrow';
+    font-size: 22px;
+    padding-right: 30px;
+    position: relative;
+    width: 60px;
+  }
+  
+  .img-container {
+    display: inline-block;
+  }
+  
+  .product-quantity {
+    width: 38px;
+    height: 25px;
+    font-size: 18px;
+    margin-right: 14px;
+    padding-left: 7px;
+    border: 1px solid #e1e1e4;
+  }
+  
+  .container-footer {
+    z-index: 2;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 0px;
+  }
+  
+  .input-container {
+    display: inline-block;
+  }
+  
+  .sub-main {
+    width: 30%;
+    margin: 22px;
+    float: left;
+  }
+  
+  .button-two {
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    font-size: 24px;
+    margin: 0 0 0 315px;
+  }
+  
+  .button-two {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 20px;
+    background-color: #493ABF;
+    border: none;
+    padding: 14px;
+    width: 200px;
+    transition: all 0.5s;
+    margin-top: 15px;
+    margin-left: 0;
+  }
+  
+  .button-two .span-button {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button-two .span-button:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button-two:hover {
+    opacity: 1;
+    right: 0;
+    background-color: #776BCF;
+  }
+  
+  body {
+    height: auto;
+  }
+  
+  body::before {
+    height: auto;
+  }

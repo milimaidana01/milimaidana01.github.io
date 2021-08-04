@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8" />
+<link href="styles.css" rel="stylesheet" type="text/css" />
+<link href="cart.css" rel="stylesheet" type="text/css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="index.js"></script>
+<script src="cart.js"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com" />
+<link
+    href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&family=Staatliches&display=swap&family=Fira+Sans&display=swap"
+    rel="stylesheet" />
+<html>
+<html>
+
+<head> </head>
+
+<body>
+    <div class="header" id="header">
+        <div class="container-a">
+            <img class="main-logo" src="https://i.ibb.co/xHxRXMr/fcf00df4-f89e-49c9-9df8-7874c24ddec9.jpg" alt="Logo" />
+            <div class="items-container">
+                <div class="items" onclick="goToHome()">Inicio</div>
+                <div class="items" onclick="goToProducts()">Productos</div>
+                <a href="#section-a" onclick="goToSectionA()" class="items">¿Cómo comprar?</a>
+                <a href="#section-b" onclick="goToSectionB()" class="items">Mayoristas</a>
+                <a href="#section-c" onclick="goToSectionC()" class="items">Contacto</a>
+                <input type="button" class="items-a" value="" onclick="goToCart()" />
+            </div>
+        </div>
+    </div>
+    <div class="products-background">
+        <div class="container-c">TODOS LOS PRODUCTOS</div>
+        <div class="products-container">
+            <div class="products">
+                <div class="container-d">
+                    <img class="product-img" src="https://i.ibb.co/n3DZHpx/Whats-App-Image-2021-08-02-at-20-02-43.jpg" />
+                    <div class="container-text">
+                        <div class="text-a">AURICULAR INALÁMBRICO BLUETOOTH NG-BTWINS 11</div>
+                        <div class="text-b">$2500</div>
+                    </div>
+                    <div class="button-container-c">
+                        <input type="button" class="button-a" value="Agregar"
+                            onclick="addToCart('AURICULAR INALÁMBRICO BLUETOOTH NG- BTWINS 11', 2500, 'https://i.ibb.co/n3DZHpx/Whats-App-Image-2021-08-02-at-20-02-43.jpg')" />
+                    </div>
+                </div>
+            </div>
+            <div class="products">
+                <div class="container-d">
+                    <img class="product-img" src="https://i.ibb.co/9pWTyZs/Whats-App-Image-2021-08-02-at-20-13-20.jpg" />
+                    <div class="container-text">
+                        <div class="text-a">AURICULARES NOGA FIT COLOR X-2670</div>
+                        <div class="text-b">$560</div>
+                    </div>
+                    <div class="button-container-c">
+                        <input type="button" class="button-a" value="Agregar"
+                            onclick="addToCart('AURICULARES NOGA FIT COLOR X-2670', 1400, 'https://i.ibb.co/9pWTyZs/Whats-App-Image-2021-08-02-at-20-13-20.jpg')" />
+                    </div>
+                </div>
+            </div>
+            <div class="products">
+                <div class="container-d">
+                    <img class="product-img" src="https://i.ibb.co/VCBgg3C/Whats-App-Image-2021-08-02-at-20-39-55.jpg" />
+                    <div class="container-text">
+                        <div class="text-a">PARLANTE HT-S08 8" PULGADAS BLUETOOTH C/LUCES LED</div>
+                        <div class="text-b">$5000</div>
+                    </div>
+                    <div class="button-container-c">
+                        <input type="button" class="button-a" value="Agregar"
+                            onclick="addToCart('PARLANTE HT-S08 8 PULGADAS BLUETOOTH CON LUCES LED', 5000, 'https://i.ibb.co/VCBgg3C/Whats-App-Image-2021-08-02-at-20-39-55.jpg')" />
+                    </div>
+                </div>
+            </div>
+            <div class="products">
+                <div class="container-d">
+                    <img class="product-img" src="https://i.ibb.co/GnYhmkp/Whats-App-Image-2021-08-02-at-20-03-34.jpg" />
+                    <div class="container-text">
+                        <div class="text-a">AURICULAR GAMER C/MIC PROFESIONAL NOGA STORMER ST-826 SURROUND 7.1 USB</div>
+                        <div class="text-b">$2700</div>
+                    </div>
+                    <div class="button-container-c">
+                        <input type="button" class="button-a" value="Agregar"
+                            onclick="addToCart('AURICULAR GAMER C/MIC PROFESIONAL NOGA STORMER ST-826 SURROUND 7.1 USB', 2700, 'https://i.ibb.co/GnYhmkp/Whats-App-Image-2021-08-02-at-20-03-34.jpg')" />
+                    </div>
+                </div>
+            </div>
+            <div class="products">
+                <div class="container-d">
+                    <img class="product-img" src="https://i.ibb.co/KxQbP3W/Whats-App-Image-2021-08-02-at-20-04-21.jpg" />
+                    <div class="container-text">
+                        <div class="text-a">COMBO GAMER TECLADO + MOUSE RETROILUMINADO TIME TCTEC8253</div>
+                        <div class="text-b">$2200</div>
+                    </div>
+                    <div class="button-container-c">
+                        <input type="button" class="button-a" value="Agregar"
+                            onclick="addToCart('COMBO GAMER TECLADO + MOUSE RETROILUMINADO TIME TCTEC8253', 2200, 'https://i.ibb.co/KxQbP3W/Whats-App-Image-2021-08-02-at-20-04-21.jpg')" />
+                    </div>
+                </div>
+            </div>
+            <div class="products">
+                <div class="container-d">
+                    <img class="product-img" src="https://i.ibb.co/pWZnN06/Whats-App-Image-2021-08-02-at-20-05-18.jpg" />
+                    <div class="container-text">
+                        <div class="text-a">KIT GAMER NOGA TECLADO + MOUSE + AURICULARES + PAD NKB-403 HYT</div>
+                        <div class="text-b">$3500</div>
+                    </div>
+                    <div class="button-container-c">
+                        <input type="button" class="button-a" value="Agregar"
+                            onclick="addToCart('KIT GAMER NOGA TECLADO + MOUSE + AURICULARES + PAD NKB-403 HYT', 3500, 'https://i.ibb.co/pWZnN06/Whats-App-Image-2021-08-02-at-20-05-18.jpg')" />
+                    </div>
+                </div>
+            </div>
+            <div class="products">
+                <div class="container-d">
+                    <img class="product-img" src="https://i.ibb.co/F3cLSzJ/Whats-App-Image-2021-08-02-at-20-06-55.jpg" />
+                    <div class="container-text">
+                        <div class="text-a">AURICULARES GATITO BLUETOOTH Y LUZ LED + LECTOR TF SEISA EJ- S26</div>
+                        <div class="text-b">$3500</div>
+                    </div>
+                    <div class="button-container-c">
+                        <input type="button" class="button-a" value="Agregar"
+                            onclick="addToCart('AURICULARES GATITO BLUETOOTH Y LUZ LED + LECTOR TF SEISA EJ- S26', 3500, 'https://i.ibb.co/F3cLSzJ/Whats-App-Image-2021-08-02-at-20-06-55.jpg')" />
+                    </div>
+                </div>
+            </div>
+            <div class="products">
+                <div class="container-d">
+                    <img class="product-img" src="https://i.ibb.co/VW4srDZ/Whats-App-Image-2021-08-02-at-20-08-05.jpg" />
+                    <div class="container-text">
+                        <div class="text-a">ARO LED RGB DE ESCRITORIO CONEXIÓN USB 16 CM C/SOPORTE P/MIC + 2 CELULARES Y
+                            CONTROL REMOTO</div>
+                        <div class="text-b">$2500</div>
+                    </div>
+                    <div class="button-container-c">
+                        <input type="button" class="button-a" value="Agregar"
+                            onclick="addToCart('ARO LED RGB DE ESCRITORIO CONEXIÓN USB 16 CM C/SOPORTE P/MIC + 2 CELULARES Y CONTROL REMOTO', 2500, 'https://i.ibb.co/VW4srDZ/Whats-App-Image-2021-08-02-at-20-08-05.jpg')" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- PRODUCTOS OCULTOS -->
+        <div class="products-container-hidden">
+            <div class="products">
+                <div class="container-d">
+                    <img class="product-img" src="https://i.ibb.co/5YYV4kQ/Whats-App-Image-2021-08-02-at-20-09-39.jpg" />
+                    <div class="container-text">
+                        <div class="text-a">MOUSE GAMER ÓPTICO RGB RETROILUMINADO 6D 2400 DPI 6 BOTONES</div>
+                        <div class="text-b">$1500</div>
+                    </div>
+                    <div class="button-container-c">
+                        <input type="button" class="button-a" value="Agregar"
+                            onclick="addToCart('MOUSE GAMER ÓPTICO RGB RETROILUMINADO 6D 2400 DPI 6 BOTONES', 1500, 'https://i.ibb.co/5YYV4kQ/Whats-App-Image-2021-08-02-at-20-09-39.jpg')" />
+                    </div>
+                </div>
+            </div>
+            <div class="products">
+                <div class="container-d">
+                    <img class="product-img" src="https://i.ibb.co/GswhB0Y/Whats-App-Image-2021-08-02-at-20-17-33.jpg" />
+                    <div class="container-text">
+                        <div class="text-a">AURICULARES EXTRA BASS MANOS LIBRES SONY</div>
+                        <div class="text-b">$1400</div>
+                    </div>
+                    <div class="button-container-c">
+                        <input type="button" class="button-a" value="Agregar"
+                            onclick="addToCart('AURICULARES EXTRA BASS MANOS LIBRES SONY', 1400, 'https://i.ibb.co/GswhB0Y/Whats-App-Image-2021-08-02-at-20-17-33.jpg')" />
+                    </div>
+                </div>
+            </div>
+            <div class="products">
+                <div class="container-d">
+                    <img class="product-img" src="https://i.ibb.co/d4SHtWn/Whats-App-Image-2021-08-02-at-20-10-19.jpg" />
+                    <div class="container-text">
+                        <div class="text-a">JOYSTICK PARA PS3 INALÁMBRICO C/CABLE CARGADOR</div>
+                        <div class="text-b">$1800</div>
+                    </div>
+                    <div class="button-container-c">
+                        <input type="button" class="button-a" value="Agregar"
+                            onclick="addToCart('JOYSTICK PARA PS3 INALÁMBRICO C/CABLE CARGADOR', 1800, 'https://i.ibb.co/d4SHtWn/Whats-App-Image-2021-08-02-at-20-10-19.jpg')" />
+                    </div>
+                </div>
+            </div>
+            <div class="products">
+                <div class="container-d">
+                    <img class="product-img" src="https://i.ibb.co/0C3wbkX/Whats-App-Image-2021-08-02-at-20-50-39.jpg" />
+                    <div class="container-text">
+                        <div class="text-a">AURICULARES GAMER C/MIC NOGANET ST-819 STONE</div>
+                        <div class="text-b">$1600</div>
+                    </div>
+                    <div class="button-container-c">
+                        <input type="button" class="button-a" value="Agregar"
+                            onclick="addToCart('AURICULARES GAMER C/MIC NOGANET ST-819 STONE', 1600, 'https://i.ibb.co/0C3wbkX/Whats-App-Image-2021-08-02-at-20-50-39.jpg')" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- PRODUCTOS OCULTOS -->
+        <div class="products-container-hidden">
+            <div class="products">
+                <div class="container-d">
+                    <img class="product-img" src="https://i.ibb.co/f1jdXsP/Whats-App-Image-2021-08-02-at-20-08-54.jpg" />
+                    <div class="container-text">
+                        <div class="text-a">MOUSE GAMER RGB ÓPTICO 6D 2400 DPI RETROILUMINADO ERGONÓMICO</div>
+                        <div class="text-b">$1500</div>
+                    </div>
+                    <div class="button-container-c">
+                        <input type="button" class="button-a" value="Agregar"
+                            onclick="addToCart('MOUSE GAMER RGB ÓPTICO 6D 2400 DPI RETROILUMINADO ERGONÓMICO', 1500, 'https://i.ibb.co/f1jdXsP/Whats-App-Image-2021-08-02-at-20-08-54.jpg')" />
+                    </div>
+                </div>
+            </div>
+            <div class="products">
+                <div class="container-d">
+                    <img class="product-img" src="https://i.ibb.co/R3Xsm9g/Whats-App-Image-2021-08-02-at-20-11-23.jpg" />
+                    <div class="container-text">
+                        <div class="text-a">AURICULARES VINCHA MANOS LIBRES MONITOR SONY</div>
+                        <div class="text-b">$1400</div>
+                    </div>
+                    <div class="button-container-c">
+                        <input type="button" class="button-a" value="Agregar"
+                            onclick="addToCart('AURICULARES VINCHA MANOS LIBRES MONITOR SONY', 1400, 'https://i.ibb.co/R3Xsm9g/Whats-App-Image-2021-08-02-at-20-11-23.jpg')" />
+                    </div>
+                </div>
+            </div>
+            <div class="products">
+                <div class="container-d">
+                    <img class="product-img" src="https://i.ibb.co/sFsD6bM/Whats-App-Image-2021-08-02-at-20-18-15.jpg" />
+                    <div class="container-text">
+                        <div class="text-a">AURICULARES VINCHA MANOS LIBRES TIME PLEGABLES</div>
+                        <div class="text-b">$1400</div>
+                    </div>
+                    <div class="button-container-c">
+                        <input type="button" class="button-a" value="Agregar"
+                            onclick="addToCart('AURICULARES VINCHA MANOS LIBRES TIME PLEGABLES', 1400, 'https://i.ibb.co/sFsD6bM/Whats-App-Image-2021-08-02-at-20-18-15.jpg')" />
+                    </div>
+                </div>
+            </div>
+            <div class="products">
+                <div class="container-d">
+                    <img class="product-img" src="https://i.ibb.co/N6fJZq6/Whats-App-Image-2021-08-02-at-20-19-06.jpg" />
+                    <div class="container-text">
+                        <div class="text-a">TECLADO GAMER RETROILUMINADO METÁLICO TIME TMTEC 8205</div>
+                        <div class="text-b">$1600</div>
+                    </div>
+                    <div class="button-container-c">
+                        <input type="button" class="button-a" value="Agregar"
+                            onclick="addToCart('TECLADO GAMER RETROILUMINADO METALICO TIME TMTEC 8205', 1600, 'https://i.ibb.co/N6fJZq6/Whats-App-Image-2021-08-02-at-20-19-06.jpg')" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- PRODUCTOS OCULTOS -->
+        <div class="products-container-hidden">
+            <div class="products">
+                <div class="container-d">
+                    <img class="product-img" src="https://i.ibb.co/JxGfgTQ/Whats-App-Image-2021-08-02-at-20-22-18.jpg" />
+                    <div class="container-text">
+                        <div class="text-a">AURICULARES BLUETOOTH LUZ LED VINCHA DE GATITO PATITA</div>
+                        <div class="text-b">$2500</div>
+                    </div>
+                    <div class="button-container-c">
+                        <input type="button" class="button-a" value="Agregar"
+                            onclick="addToCart('AURICULARES BLUETOOTH LUZ LED VINCHA DE GATITO PATITA', 2500, 'https://i.ibb.co/JxGfgTQ/Whats-App-Image-2021-08-02-at-20-22-18.jpg')" />
+                    </div>
+                </div>
+            </div>
+            <div class="products">
+                <div class="container-d">
+                    <img class="product-img" src="https://i.ibb.co/DDQ647Y/Whats-App-Image-2021-08-02-at-20-25-23.jpg" />
+                    <div class="container-text">
+                        <div class="text-a">KIT TECLADO + MOUSE GAMER NOGA STORMER NKB-300</div>
+                        <div class="text-b">$1600</div>
+                    </div>
+                    <div class="button-container-c">
+                        <input type="button" class="button-a" value="Agregar"
+                            onclick="addToCart('KIT TECLADO + MOUSE GAMER NOGA STORMER NKB-300', 1600, 'https://i.ibb.co/DDQ647Y/Whats-App-Image-2021-08-02-at-20-25-23.jpg')" />
+                    </div>
+                </div>
+            </div>
+            <div class="products">
+                <div class="container-d">
+                    <img class="product-img" src="https://i.ibb.co/bsP2zDC/Whats-App-Image-2021-08-02-at-20-28-15.jpg" />
+                    <div class="container-text">
+                        <div class="text-a">JOYSTICK SONY PS4 INALÁMBRICO DUALSHOCK</div>
+                        <div class="text-b">$6000</div>
+                    </div>
+                    <div class="button-container-c">
+                        <input type="button" class="button-a" value="Agregar"
+                            onclick="addToCart('JOYSTICK SONY PS4 INALÁMBRICO DUALSHOCK', 6000, 'https://i.ibb.co/bsP2zDC/Whats-App-Image-2021-08-02-at-20-28-15.jpg')" />
+                    </div>
+                </div>
+            </div>
+            <div class="products">
+                <div class="container-d">
+                    <img class="product-img" src="https://i.ibb.co/ftbmvsn/Whats-App-Image-2021-08-02-at-20-32-56.jpg" />
+                    <div class="container-text">
+                        <div class="text-a">PARLANTE RECARGABLE 8" PULGADAS ORYX SP-1306</div>
+                        <div class="text-b">$6000</div>
+                    </div>
+                    <div class="button-container-c">
+                        <input type="button" class="button-a" value="Agregar"
+                            onclick="addToCart('PARLANTE RECARGABLE 8 PULGADAS ORYX SP-1306', 6000, 'https://i.ibb.co/ftbmvsn/Whats-App-Image-2021-08-02-at-20-32-56.jpg')" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- PRODUCTOS OCULTOS -->
+        <div class="products-container-hidden">
+            <div class="products">
+                <div class="container-d">
+                    <img class="product-img" src="https://i.ibb.co/m0WBsSS/Whats-App-Image-2021-08-02-at-20-34-11.jpg" />
+                    <div class="container-text">
+                        <div class="text-a">PARLANTE RECARGABLE POTENCIADO 12" PULGADAS ORYX MX 1202</div>
+                        <div class="text-b">$12000</div>
+                    </div>
+                    <div class="button-container-c">
+                        <input type="button" class="button-a" value="Agregar"
+                            onclick="addToCart('PARLANTE RECARGABLE POTENCIADO 12 PULGADAS ORYX MX 1202', 12000, 'https://i.ibb.co/m0WBsSS/Whats-App-Image-2021-08-02-at-20-34-11.jpg')" />
+                    </div>
+                </div>
+            </div>
+            <div class="products">
+                <div class="container-d">
+                    <img class="product-img" src="https://i.ibb.co/WzwzMLc/Whats-App-Image-2021-08-02-at-20-36-45.jpg" />
+                    <div class="container-text">
+                        <div class="text-a">PARLANTE HT-K2 8" PULGADAS BLUETOOTH CON LUCES LED</div>
+                        <div class="text-b">$5000</div>
+                    </div>
+                    <div class="button-container-c">
+                        <input type="button" class="button-a" value="Agregar"
+                            onclick="addToCart('PARLANTE HT-K2 8 PULGADAS BLUETOOTH CON LUCES LED', 5000, 'https://i.ibb.co/WzwzMLc/Whats-App-Image-2021-08-02-at-20-36-45.jpg')" />
+                    </div>
+                </div>
+            </div>
+            <div class="products">
+                <div class="container-d">
+                    <img class="product-img" src="https://i.ibb.co/3pTX3XN/Whats-App-Image-2021-08-02-at-20-37-27.jpg" />
+                    <div class="container-text">
+                        <div class="text-a">TIRA LED 5050 RGB 5M C/FUENTE, CONTROL Y CONTROLADORA WIFI</div>
+                        <div class="text-b">$3200</div>
+                    </div>
+                    <div class="button-container-c">
+                        <input type="button" class="button-a" value="Agregar"
+                            onclick="addToCart('TIRA LED 5050 RGB 5M C/FUENTE, CONTROL Y CONTROLADORA WIFI', 3200, 'https://i.ibb.co/3pTX3XN/Whats-App-Image-2021-08-02-at-20-37-27.jpg')" />
+                    </div>
+                </div>
+            </div>
+            <div class="products">
+                <div class="container-d">
+                    <img class="product-img" src="https://i.ibb.co/QHPvy1G/Whats-App-Image-2021-08-02-at-20-38-27.jpg" />
+                    <div class="container-text">
+                        <div class="text-a">AURICULARES INALÁMBRICOS BLUETOOTH HEADPHONES P47 5.0 + EDR</div>
+                        <div class="text-b">$1500</div>
+                    </div>
+                    <div class="button-container-c">
+                        <input type="button" class="button-a" value="Agregar"
+                            onclick="addToCart('AURICULARES INALÁMBRICOS BLUETOOTH HEADPHONES P47 5.0 + EDR', 1500, 'https://i.ibb.co/QHPvy1G/Whats-App-Image-2021-08-02-at-20-38-27.jpg')" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- PRODUCTOS OCULTOS -->
+        <div class="products-container-hidden">
+            <div class="products">
+                <div class="container-d">
+                    <img class="product-img" src="https://i.ibb.co/dLdWzPH/Whats-App-Image-2021-08-02-at-20-39-16.jpg" />
+                    <div class="container-text">
+                        <div class="text-a">JOYSTICK PS3 SONY</div>
+                        <div class="text-b">$2000</div>
+                    </div>
+                    <div class="button-container-c">
+                        <input type="button" class="button-a" value="Agregar"
+                            onclick="addToCart('JOYSTICK PS3 SONY', 2000, 'https://i.ibb.co/dLdWzPH/Whats-App-Image-2021-08-02-at-20-39-16.jpg')" />
+                    </div>
+                </div>
+            </div>
+            <div class="products">
+                <div class="container-d">
+                    <img class="product-img" src="https://i.ibb.co/0cMHx09/Whats-App-Image-2021-08-02-at-20-41-20.jpg" />
+                    <div class="container-text">
+                        <div class="text-a">PARLANTE PORTÁTIL C/KARAROKE INOVA PAR-178</div>
+                        <div class="text-b">$2000</div>
+                    </div>
+                    <div class="button-container-c">
+                        <input type="button" class="button-a" value="Agregar"
+                            onclick="addToCart('PARLANTE PORTÁTIL C/KARAROKE INOVA PAR-178', 2000, 'https://i.ibb.co/0cMHx09/Whats-App-Image-2021-08-02-at-20-41-20.jpg')" />
+                    </div>
+                </div>
+            </div>
+            <div class="products">
+                <div class="container-d">
+                    <img class="product-img" src="https://i.ibb.co/bWK7jHV/Whats-App-Image-2021-08-02-at-20-42-24.jpg" />
+                    <div class="container-text">
+                        <div class="text-a">LÁMPARA LED RGB PARLANTE BLUETOOTH + CONTROL REMOTO</div>
+                        <div class="text-b">$1600</div>
+                    </div>
+                    <div class="button-container-c">
+                        <input type="button" class="button-a" value="Agregar"
+                            onclick="addToCart('LÁMPARA LED RGB PARLANTE BLUETOOTH + CONTROL REMOTO', 1600, 'https://i.ibb.co/bWK7jHV/Whats-App-Image-2021-08-02-at-20-42-24.jpg')" />
+                    </div>
+                </div>
+            </div>
+            <div class="products">
+                <div class="container-d">
+                    <img class="product-img" src="https://i.ibb.co/93YSCCt/Whats-App-Image-2021-08-02-at-20-43-19.jpg" />
+                    <div class="container-text">
+                        <div class="text-a">AURICULARES NOGA BLUETOOTH EARBUDS/ NG-BTWINS21</div>
+                        <div class="text-b">$2200</div>
+                    </div>
+                    <div class="button-container-c">
+                        <input type="button" class="button-a" value="Agregar"
+                            onclick="addToCart('AURICULARES NOGA BLUETOOTH EARBUDS/ NG-BTWINS21', 2200, 'https://i.ibb.co/93YSCCt/Whats-App-Image-2021-08-02-at-20-43-19.jpg')" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- PRODUCTOS OCULTOS -->
+        <div class="products-container-hidden">
+            <div class="products">
+                <div class="container-d">
+                    <img class="product-img" src="https://i.ibb.co/W3JZDD6/Whats-App-Image-2021-08-02-at-20-44-30-1.jpg" />
+                    <div class="container-text">
+                        <div class="text-a">ARO DE LUZ LED 33CM C/TRIPODE DE 2,10M Y SOPORTE DE CELULAR</div>
+                        <div class="text-b">$3500</div>
+                    </div>
+                    <div class="button-container-c">
+                        <input type="button" class="button-a" value="Agregar"
+                            onclick="addToCart('ARO DE LUZ LED 33CM C/TRIPODE DE 2,10M Y SOPORTE DE CELULAR', 3500, 'https://i.ibb.co/W3JZDD6/Whats-App-Image-2021-08-02-at-20-44-30-1.jpg')" />
+                    </div>
+                </div>
+            </div>
+            <div class="products">
+                <div class="container-d">
+                    <img class="product-img" src="https://i.ibb.co/cQKXRfZ/Whats-App-Image-2021-08-02-at-20-45-27.jpg" />
+                    <div class="container-text">
+                        <div class="text-a">KIT TIRA LED RGB 5050 C/CONTROL REMOTO DE 5M</div>
+                        <div class="text-b">$2200</div>
+                    </div>
+                    <div class="button-container-c">
+                        <input type="button" class="button-a" value="Agregar"
+                            onclick="addToCart('KIT TIRA LED RGB 5050 C/CONTROL REMOTO DE 5M', 2200, 'https://i.ibb.co/cQKXRfZ/Whats-App-Image-2021-08-02-at-20-45-27.jpg')" />
+                    </div>
+                </div>
+            </div>
+            <div class="products">
+                <div class="container-d">
+                    <img class="product-img" src="https://i.ibb.co/Smt5Znk/Whats-App-Image-2021-08-02-at-20-46-20.jpg" />
+                    <div class="container-text">
+                        <div class="text-a">AURICULARES NOGA BLUETOOTH IN EAR/ NG-BTWINS22</div>
+                        <div class="text-b">$2200</div>
+                    </div>
+                    <div class="button-container-c">
+                        <input type="button" class="button-a" value="Agregar"
+                            onclick="addToCart('AURICULARES NOGA BLUETOOTH IN EAR/ NG-BTWINS22', 2200, 'https://i.ibb.co/Smt5Znk/Whats-App-Image-2021-08-02-at-20-46-20.jpg')" />
+                    </div>
+                </div>
+            </div>
+            <div class="products">
+                <div class="container-d">
+                    <img class="product-img" src="https://i.ibb.co/nfbR89W/Whats-App-Image-2021-08-02-at-20-47-12.jpg" />
+                    <div class="container-text">
+                        <div class="text-a">MICRÓFONO KARAOKE BLUETOOTH INALÁMBRICO</div>
+                        <div class="text-b">$1500</div>
+                    </div>
+                    <div class="button-container-c">
+                        <input type="button" class="button-a" value="Agregar"
+                            onclick="addToCart('MICRÓFONO KARAOKE BLUETOOTH INALÁMBRICO', 1500, 'https://i.ibb.co/nfbR89W/Whats-App-Image-2021-08-02-at-20-47-12.jpg')" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- PRODUCTOS OCULTOS -->
+        <div class="products-container-hidden">
+            <div class="products">
+                <div class="container-d">
+                    <img class="product-img" src="https://i.ibb.co/5rxqP4j/Whats-App-Image-2021-08-02-at-20-48-12.jpg" />
+                    <div class="container-text">
+                        <div class="text-a">TIRA LED RGB 5050 PARA TV CON CONTROL REMOTO DE 2M</div>
+                        <div class="text-b">$1500</div>
+                    </div>
+                    <div class="button-container-c">
+                        <input type="button" class="button-a" value="Agregar"
+                            onclick="addToCart('TIRA LED RGB 5050 PARA TV CON  CONTROL REMOTO DE 2M', 1500, 'https://i.ibb.co/5rxqP4j/Whats-App-Image-2021-08-02-at-20-48-12.jpg')" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    
+        <div class="button-container hide-products-btn">
+            <button class="btn-4" id="button" onclick="showProducts()"><span>Mostrar más</span></button>
+        </div>
+    
+    </div>
+
+    <div class="container-footer">
+        <div class="footer">
+            <div class="title-footer">Navegación</div>
+            <div class="text-footer" onclick="goToHome()">Inicio</div>
+            <div class="text-footer" onclick="goToProducts()">Productos</div>
+            <div class="text-footer" onclick="goToSectionA()">¿Cómo comprar?</div>
+            <div class="text-footer" onclick="goToSectionB()">Mayoristas</div>
+            <div class="text-footer" onclick="goToSectionC()">Contacto</div>
+        </div>
+        <div class="footer">
+            <img class="main-logo" src="https://i.ibb.co/xHxRXMr/fcf00df4-f89e-49c9-9df8-7874c24ddec9.jpg" alt="Logo" />
+        </div>
+        <div class="footer">
+            <div class="title-footer">Redes sociales</div>
+            <div class="text-footer" onclick="goToInstagram()">Instagram</div>
+            <div class="text-footer" onclick="goToFacebook()">Facebook</div>
+            <div class="text-footer" onclick="goToWhatsapp()">Whatsapp</div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+</html>
+
+</html>

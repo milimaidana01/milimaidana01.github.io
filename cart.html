@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8" />
+<link href="styles.css" rel="stylesheet" type="text/css" />
+<link href="cart.css" rel="stylesheet" type="text/css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="index.js"></script>
+<script src="cart.js"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com" />
+<link
+  href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&family=Staatliches&display=swap&family=Fira+Sans&display=swap"
+  rel="stylesheet" />
+<html>
+<html>
+
+<head> </head>
+
+<body>
+  <div class="header" id="header">
+    <div class="container-a">
+      <img class="main-logo" src="https://i.ibb.co/xHxRXMr/fcf00df4-f89e-49c9-9df8-7874c24ddec9.jpg" alt="Logo" />
+      <div class="items-container">
+        <div class="items" onclick="goToHome()">Inicio</div>
+        <div class="items" onclick="goToProducts()">Productos</div>
+        <a href="#section-a" onclick="goToSectionA()" class="items">¿Cómo comprar?</a>
+        <a href="#section-b" onclick="goToSectionB()" class="items">Mayoristas</a>
+        <a href="#section-c" onclick="goToSectionC()" class="items">Contacto</a>
+        <input type="button" class="items-a" value="" onclick="goToCart()" />
+      </div>
+    </div>
+  </div>
+  <div class="form-cart-container">
+    <div class="cart-container" id="cart"></div>
+    <div class="form-container">
+      <div class="contact-container">
+        <div class="form-title">Datos de contacto</div>
+        <input class="form" id="email" placeholder="Email" />
+        <input class="form" id="phone" placeholder="Teléfono" />
+      </div>
+      <div class="delivery-container">
+        <div class="form-title">Datos para la entrega</div>
+        <input class="form" id="address" placeholder="Dirección" />
+        <input class="form" id="postal-code" placeholder="Código postal" />
+    <div class="total-price" id="total-price">TOTAL: $0</div>
+        <div class="main">
+          <button class="button-two" id="buy-btn" onclick="buy()">Comprar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-footer">
+    <div class="footer">
+      <div class="title-footer">Navegación</div>
+      <div class="text-footer" onclick="goToHome()">Inicio</div>
+      <div class="text-footer" onclick="goToProducts()">Productos</div>
+      <div class="text-footer" onclick="goToSectionA()">¿Cómo comprar?</div>
+      <div class="text-footer" onclick="goToSectionB()">Mayoristas</div>
+      <div class="text-footer" onclick="goToSectionC()">Contacto</div>
+    </div>
+    <div class="footer">
+      <img class="main-logo" src="https://i.ibb.co/xHxRXMr/fcf00df4-f89e-49c9-9df8-7874c24ddec9.jpg" alt="Logo" />
+    </div>
+    <div class="footer">
+      <div class="title-footer">Redes sociales</div>
+      <div class="text-footer" onclick="goToInstagram()">Instagram</div>
+      <div class="text-footer" onclick="goToFacebook()">Facebook</div>
+      <div class="text-footer" onclick="goToWhatsapp()">Whatsapp</div>
+    </div>
+  </div>
+</body>
+
+</html>
+
+</html>
+
+</html>
