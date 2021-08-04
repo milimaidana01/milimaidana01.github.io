@@ -23,7 +23,7 @@ $(document).ready(function () {
                                 <input type="number" name="quantity" min="0" value=`+ cartItem.quantity + ` class="product-quantity" onchange="changeItemQuantity('` + cartItem.name + `', this.value)"> 
                             </div>
 
-                            <div class="input-container" style="margin-right: 16px; cursor: pointer" onclick="removeFromCart(`+ i + `, '` + cartItem.name + `')">
+                            <div class="input-container" style="margin-right: 16px; cursor: pointer;font-family: "Droid Sans", sans-serif;" onclick="removeFromCart(`+ i + `, '` + cartItem.name + `')">
                                 🞮
                             </div>
 
